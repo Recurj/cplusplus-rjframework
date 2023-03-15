@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Strings">
+      <UniqueIdentifier>{b5684aa2-c252-4a5c-9060-d6eae244ff0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Strings\Unicode">
+      <UniqueIdentifier>{390e905a-8f45-4dc3-bbde-4a3d5cdea9f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataTools">
+      <UniqueIdentifier>{1d33c29e-b668-4461-9001-02095b43c8e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Strings\Byte">
+      <UniqueIdentifier>{343b2096-803b-40ba-b949-7bfd6c5fc091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections">
+      <UniqueIdentifier>{4bcae696-4682-4b6c-a463-b520c5d14358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataTools">
+      <UniqueIdentifier>{5dba50f2-a2d0-462e-acb1-8cd3514f5ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings">
+      <UniqueIdentifier>{4b501c57-cd9c-404e-94c2-85a0a68dd9ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Unicode">
+      <UniqueIdentifier>{b9103c07-03db-4b63-934c-5289f5aca79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Byte">
+      <UniqueIdentifier>{fb9fcecb-d264-4306-a428-3a093025ec96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Byte\Flex">
+      <UniqueIdentifier>{1095de4a-22c5-4644-8c53-e0c9a86e1c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Strings\Encoding">
+      <UniqueIdentifier>{8eaf586a-2ac7-46eb-9b74-bf7fcdd12317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messages">
+      <UniqueIdentifier>{91844ad0-c8a7-474b-83d8-67c0da10d9f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messages">
+      <UniqueIdentifier>{72de9b23-98a0-4a7e-82cb-e18b1cc5c616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Loggers">
+      <UniqueIdentifier>{5da0ac03-e166-46d1-bc8d-ec48bcac026c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Loggers">
+      <UniqueIdentifier>{72c005ea-2215-4dab-ab7d-bd15fffc7fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Unicode\Flex">
+      <UniqueIdentifier>{69fa58de-aad9-4e13-96d4-cad117cf41bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Unicode\Var">
+      <UniqueIdentifier>{7753a504-f464-497f-9da4-68625291edd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File">
+      <UniqueIdentifier>{92288a2b-765d-45c6-a287-64b3cbdf38ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{e71ae9da-e19a-469c-9c16-14f8bccef7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Strings\Native">
+      <UniqueIdentifier>{37c8c3f4-8a80-48fa-9066-91fc4d039681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Native">
+      <UniqueIdentifier>{3ee52512-0164-4b15-8110-80a182627454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{8e461a7e-b9e5-4ded-9f53-15ded738ceb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Datetime">
+      <UniqueIdentifier>{88158f69-fd87-4bb2-8be3-13781daf665f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\datetime">
+      <UniqueIdentifier>{b14dcfff-5c8a-4331-b7ca-9300bbd9b6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tasks">
+      <UniqueIdentifier>{afd3fdd5-ddc0-4b53-b909-5ad7e5936c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OS">
+      <UniqueIdentifier>{355c8117-17df-4bdf-95fc-459b9fddeb0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tasks">
+      <UniqueIdentifier>{23282b20-e327-4245-aac1-74ab672f098c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OS">
+      <UniqueIdentifier>{b73dfe5a-cc8c-498e-b2f7-27c547c95e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module">
+      <UniqueIdentifier>{8311eee5-800a-4d44-842a-81595a09112c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module\Namespace">
+      <UniqueIdentifier>{8bb3a05a-15e3-4442-8d0d-0eed20c3dd25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Allocators">
+      <UniqueIdentifier>{5c137bc1-10c5-49dd-ad2a-724c98a8f23d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Allocators\Policy">
+      <UniqueIdentifier>{67c5becb-6f9c-4f97-8740-28ac72086b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Allocators">
+      <UniqueIdentifier>{01ee8f85-a988-46f2-9fde-17e1d3d7a806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Byte\Constants">
+      <UniqueIdentifier>{b66120ff-a07b-4fe5-92fb-51b21fabcb50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Unicode\Constants">
+      <UniqueIdentifier>{01cc97c0-bb85-447c-a771-474136d3df9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Byte\Var">
+      <UniqueIdentifier>{e2f3e78d-6af3-48c3-a6c8-097a2ee47510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections\Chain">
+      <UniqueIdentifier>{ad413aed-b142-451a-9d43-3029db65cc0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OS\IPC">
+      <UniqueIdentifier>{9420719b-f098-49a8-bdcb-7e3e75d7635e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OS\Events">
+      <UniqueIdentifier>{a4e9885e-d0b1-479a-8a2d-9713273f882c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File\content">
+      <UniqueIdentifier>{2ba81ee0-6921-4d73-a7e5-e8fb3f3f8f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File\content">
+      <UniqueIdentifier>{815f7388-69df-4dc7-bd0b-cd89f28dba2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application">
+      <UniqueIdentifier>{fe79b3e0-1cf5-4ab4-b250-f3e481d85679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Storage">
+      <UniqueIdentifier>{328a3f4d-eb59-416e-aab7-e8b2f1d4546f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Storage">
+      <UniqueIdentifier>{5e371684-d9aa-48da-9019-3c0844692f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections\arrays">
+      <UniqueIdentifier>{a29c68b2-9f2c-41cf-a710-1e614d6867e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Loggers\writers">
+      <UniqueIdentifier>{31b81830-f966-438f-8ed5-3a18d6731e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Loggers\Writers">
+      <UniqueIdentifier>{af7b193f-d815-41f2-812c-b6b88dfbb282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataTools\sync">
+      <UniqueIdentifier>{cf01b11b-21e8-4c60-a855-dab3feec49a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Strings\Encoding">
+      <UniqueIdentifier>{0d5a4eac-016c-4c8b-9756-fa938751cbb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections\BTree">
+      <UniqueIdentifier>{accd3806-15bf-41df-bcbc-a5bb8b0e826a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections\maps">
+      <UniqueIdentifier>{661f1439-0037-4969-8f1e-7db52fb7fdd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections\Lists">
+      <UniqueIdentifier>{a2857d54-6eda-45a4-a7d0-99af288bbe2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Allocators\Regions">
+      <UniqueIdentifier>{cb4649a8-0a3d-4580-8895-41192d536923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Formats">
+      <UniqueIdentifier>{d2638421-aa36-402a-96ea-01de197be730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Formats">
+      <UniqueIdentifier>{cc01b45a-5867-4222-8e2b-a1781c3a02df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Formats\simple">
+      <UniqueIdentifier>{6e263d45-9e54-40ed-9488-2898f9ae8005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Collections">
+      <UniqueIdentifier>{a0db30f4-6210-469f-9b27-ada604746b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Collections\BTree">
+      <UniqueIdentifier>{25bb8122-84ba-4817-b8bb-57e2b45b9ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Collections\Maps">
+      <UniqueIdentifier>{e187dedf-f018-4e6e-a6b7-8760d03d4b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections\BTree\Leafs">
+      <UniqueIdentifier>{9b72be26-67ae-46b4-bb55-693ebea78eba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\application\application.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\collection.h">
+      <Filter>Header Files\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\message.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\known.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\log.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\datatools.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datetime\dtimebinary.h">
+      <Filter>Header Files\Datetime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\file.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filebase.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\fileencode.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filereader.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filereaderpossaver.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filereadertext.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filewalker.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filewriter.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filewriterpossaver.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\logger.h">
+      <Filter>Header Files\Loggers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\iterators\stringinputiterator.h">
+      <Filter>Header Files\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\result.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytereader.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytewriter.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytepacker.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\encoding.h">
+      <Filter>Header Files\Strings\Encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\var.h">
+      <Filter>Header Files\Strings\Byte\Var</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\flex.h">
+      <Filter>Header Files\Strings\Unicode\Flex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\var.h">
+      <Filter>Header Files\Strings\Unicode\Var</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\allocated.h">
+      <Filter>Header Files\Strings\Unicode\Var</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\allocated.h">
+      <Filter>Header Files\Strings\Byte\Var</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\task.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hlibrary.h">
+      <Filter>Header Files\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hhandle.h">
+      <Filter>Header Files\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\osdefs.h">
+      <Filter>Header Files\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\modbase.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\defs\moddefbase.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\module.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\namespaces\rjbase.h">
+      <Filter>Header Files\Module\Namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\cmd.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hheap.h">
+      <Filter>Header Files\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorany.h">
+      <Filter>Header Files\Allocators\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorfixed.h">
+      <Filter>Header Files\Allocators\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\byteconvertor.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\amount.h">
+      <Filter>Header Files\Strings\Byte\Var</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\flex.h">
+      <Filter>Header Files\Strings\Byte\Flex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\comporator.h">
+      <Filter>Header Files\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\expressions.h">
+      <Filter>Header Files\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\storage.h">
+      <Filter>Header Files\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\iterators\rangeloop.h">
+      <Filter>Header Files\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\data.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytestorage.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hipcmemory.h">
+      <Filter>Header Files\OS\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hipcmutex.h">
+      <Filter>Header Files\OS\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hprocess.h">
+      <Filter>Header Files\OS\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hlistener.h">
+      <Filter>Header Files\OS\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hevent.h">
+      <Filter>Header Files\OS\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\value.h">
+      <Filter>Header Files\Strings\Byte\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\value.h">
+      <Filter>Header Files\Strings\Unicode\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filecontent.h">
+      <Filter>Header Files\File\content</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\string.h">
+      <Filter>Header Files\Strings\Byte\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\string.h">
+      <Filter>Header Files\Strings\Unicode\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\list.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\leaf.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\static.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\taskqueuebasic.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\taskqueue.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\fileapp.h">
+      <Filter>Header Files\Loggers\writers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\filemodule.h">
+      <Filter>Header Files\Loggers\writers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\memory.h">
+      <Filter>Header Files\Loggers\writers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\atomicnumber.h">
+      <Filter>Header Files\DataTools\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\sharedsize.h">
+      <Filter>Header Files\DataTools\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\loggerthread.h">
+      <Filter>Header Files\Loggers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\loggerapp.h">
+      <Filter>Header Files\Loggers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\taskqueuepool.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\error.h">
+      <Filter>Header Files\Strings\Byte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\filename.h">
+      <Filter>Header Files\Strings\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\native.h">
+      <Filter>Header Files\Strings\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\dictionary.h">
+      <Filter>Header Files\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\tasklogger.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\task.h">
+      <Filter>Header Files\Loggers\writers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\dtime.h">
+      <Filter>Header Files\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filescript.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\arrays\defs.h">
+      <Filter>Header Files\Collections\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\arrays\integrals.h">
+      <Filter>Header Files\Collections\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\arrays\pointers.h">
+      <Filter>Header Files\Collections\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\constant.h">
+      <Filter>Header Files\Collections\Chain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\flex.h">
+      <Filter>Header Files\Collections\Chain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\var.h">
+      <Filter>Header Files\Collections\Chain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\varallocated.h">
+      <Filter>Header Files\Collections\Chain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorcatalog.h">
+      <Filter>Header Files\Allocators\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\chain.h">
+      <Filter>Header Files\Collections\Chain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionbtree.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionjs.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionlua.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionmap.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionmessage.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionnet.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionsecurity.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionstorage.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionwww.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionxml.h">
+      <Filter>Header Files\Allocators\Regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treesize.h">
+      <Filter>Header Files\Collections\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treestringbyte.h">
+      <Filter>Header Files\Collections\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treestringunicode.h">
+      <Filter>Header Files\Collections\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\maps\stringbyte2stringbyte.h">
+      <Filter>Header Files\Collections\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\maps\stringbyte2size.h">
+      <Filter>Header Files\Collections\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\defs.h">
+      <Filter>Header Files\Formats\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\parser.h">
+      <Filter>Header Files\Formats\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\errors.h">
+      <Filter>Header Files\Formats\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\builder.h">
+      <Filter>Header Files\Formats\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\readers.h">
+      <Filter>Header Files\Formats\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treeint64.h">
+      <Filter>Header Files\Collections\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\maps\handbook.h">
+      <Filter>Header Files\Collections\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\readerhandbook.h">
+      <Filter>Header Files\Formats\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\list.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\queue.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\lists\defs.h">
+      <Filter>Header Files\Collections\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\pagination.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\shuffle.h">
+      <Filter>Header Files\DataTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorpolicy.h">
+      <Filter>Header Files\Allocators\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\application\memory.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\def.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\index.h">
+      <Filter>Header Files\Collections\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtree.h">
+      <Filter>Header Files\Collections\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafint64.h">
+      <Filter>Header Files\Collections\BTree\Leafs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafsize.h">
+      <Filter>Header Files\Collections\BTree\Leafs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafstringb.h">
+      <Filter>Header Files\Collections\BTree\Leafs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafstringu.h">
+      <Filter>Header Files\Collections\BTree\Leafs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\oslib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\ostarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\cpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\functors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\iname.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\datalength.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\errorcodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\rjsecuritybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUnicode.cpp">
+      <Filter>Source Files\Strings\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUnicodeVar.cpp">
+      <Filter>Source Files\Strings\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUnicodeC.cpp">
+      <Filter>Source Files\Strings\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="StringByte.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="StringByteC.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="StringByteVar.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="StringByteFlex.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUnicodeFlex.cpp">
+      <Filter>Source Files\Strings\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="stringbytevalue.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="stringunicodevalue.cpp">
+      <Filter>Source Files\Strings\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTools.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageLog.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\Loggers</Filter>
+    </ClCompile>
+    <ClCompile Include="StringNativeTools.cpp">
+      <Filter>Source Files\Strings\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="allocator.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="dtimebinary.cpp">
+      <Filter>Source Files\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="bytereader.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="bytewriter.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="bytepacker.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="file.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="filebase.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="fileencode.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="filereader.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="filereadertext.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="filewalker.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="filewriter.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="task.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="encoding.cpp">
+      <Filter>Source Files\Strings\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="handle.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="hevent.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="hlibrary.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="hipcmemory.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="hipcmutex.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="messagecmd.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="dictionary.cpp">
+      <Filter>Source Files\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="stringbyteamount.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="hheap.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="allocatorwithinfo.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="byteconvertor.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="stringbytevarassigned.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="stringunicodevarassigned.cpp">
+      <Filter>Source Files\Strings\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="bytestorage.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="filecontextent.cpp">
+      <Filter>Source Files\File\content</Filter>
+    </ClCompile>
+    <ClCompile Include="stringbyteerror.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="allocatorany.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="allocatorfixed.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="datastorage.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="datastoragereaf.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="taskqueuebasic.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="taskqueue.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerwriterfileapp.cpp">
+      <Filter>Source Files\Loggers\Writers</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerwriterfilemodule.cpp">
+      <Filter>Source Files\Loggers\Writers</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerthread.cpp">
+      <Filter>Source Files\Loggers</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerapp.cpp">
+      <Filter>Source Files\Loggers</Filter>
+    </ClCompile>
+    <ClCompile Include="taskqueuepool.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="hlistener.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="hprocess.cpp">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="stringfilename.cpp">
+      <Filter>Source Files\Strings\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="tasklogger.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerwritertask.cpp">
+      <Filter>Source Files\Loggers\Writers</Filter>
+    </ClCompile>
+    <ClCompile Include="stringbytevarallocated.cpp">
+      <Filter>Source Files\Strings\Byte</Filter>
+    </ClCompile>
+    <ClCompile Include="stringunicodevarallocated.cpp">
+      <Filter>Source Files\Strings\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="stringdtime.cpp">
+      <Filter>Source Files\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="appargs.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="filescript.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="dtime.cpp">
+      <Filter>Source Files\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="allocatorcatalog.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="btreesize.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="btreestringbyte.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="btreestringunicode.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="mapstringbyte2stringbyte.cpp">
+      <Filter>Source Files\Collections\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="mapstringbyte2size.cpp">
+      <Filter>Source Files\Collections\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="formatsimpledefs.cpp">
+      <Filter>Source Files\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="formatsimpleparser.cpp">
+      <Filter>Source Files\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="formatsimplebuilder.cpp">
+      <Filter>Source Files\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="formatsimplereaders.cpp">
+      <Filter>Source Files\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="maphandbook.cpp">
+      <Filter>Source Files\Collections\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="messagelist.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="messagequeue.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="pagination.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="shuffle.cpp">
+      <Filter>Source Files\DataTools</Filter>
+    </ClCompile>
+    <ClCompile Include="chain.cpp">
+      <Filter>Source Files\Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="applicationmemory.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="btreeindex.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="rbtree.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="rbtreecompare.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="btreeint.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="rbtree_drop.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="rbtree_insert.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+    <ClCompile Include="rbtreenode.cpp">
+      <Filter>Source Files\Collections\BTree</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rjbase.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

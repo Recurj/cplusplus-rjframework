@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D432356C-2EFC-4CB8-B806-42AD778E7D64}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>rjwww</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>e:/development/rj/build/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>e:/development/rj/Solutions/rj/$(Platform)/base/$(Configuration)/$(ProjectName)/</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>e:/development/rj/build/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>e:/development/rj/Solutions/rj/$(Platform)/base/$(Configuration)/$(ProjectName)/</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_rjOS_WIN;rjwwwlibrary;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>D:\development\cpp\include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <OutputFile>e:/development/rj/build/$(Platform)/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <Version>706.0403</Version>
+      <AdditionalLibraryDirectories>e:/development/rj/lib/$(Platform)/$(Configuration);e:/development/rj/tp/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(ProjectName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>e:/development/rj/lib/$(Platform)/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <AdditionalDependencies>wsock32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_rjOS_WIN;rjwwwlibrary;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <ProgramDataBaseFileName />
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>D:\development\cpp\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>e:/development/rj/build/$(Platform)/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <Version>706.0403</Version>
+      <AdditionalLibraryDirectories>e:/development/rj/lib/$(Platform)/$(Configuration);e:/development/rj/tp/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile />
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName />
+      <MapExports>false</MapExports>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>e:/development/rj/lib/$(Platform)/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <AdditionalDependencies>wsock32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\defs.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\channels.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\client.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\formdata.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\plugins.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\reply.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\replyfile.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\replyjson.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\replywebsocket.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\server.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\json\builder.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\json\parser.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\messages\reply.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\messages\replyfile.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\messages\replyjsonerror.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\url.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\connection.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\defs.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\datain.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\dataout.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\defs\moddefwww.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\modwww.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\module.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\namespaces\rjwww.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="http.cpp" />
+    <ClCompile Include="httpclient.cpp" />
+    <ClCompile Include="httpformdata.cpp" />
+    <ClCompile Include="httpreply.cpp" />
+    <ClCompile Include="httpreplyfile.cpp" />
+    <ClCompile Include="httpreplyjson.cpp" />
+    <ClCompile Include="httpreplywebsocket.cpp" />
+    <ClCompile Include="httpmessage.cpp" />
+    <ClCompile Include="httpmessagelang.cpp" />
+    <ClCompile Include="httpserver.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="netjsonparser.cpp" />
+    <ClCompile Include="netjsonvar.cpp" />
+    <ClCompile Include="netmessagehttpreply.cpp" />
+    <ClCompile Include="netmessagehttpreplyfile.cpp" />
+    <ClCompile Include="netmessagehttpreplyjsonerror.cpp" />
+    <ClCompile Include="url.cpp" />
+    <ClCompile Include="websocket.cpp" />
+    <ClCompile Include="websocketin.cpp" />
+    <ClCompile Include="websocketout.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\rjbase\rjbase.vcxproj">
+      <Project>{218ed4ff-b394-405e-8215-eab07b7d35ab}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\rjsecurity\rjopenssl.vcxproj">
+      <Project>{55bd8a98-13f2-42af-a6b4-d27edee98649}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

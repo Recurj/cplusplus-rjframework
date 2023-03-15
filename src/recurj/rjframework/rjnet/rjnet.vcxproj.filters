@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Messages">
+      <UniqueIdentifier>{7586b571-8b4b-4aeb-9fcc-11598cf1973c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tasks">
+      <UniqueIdentifier>{c0f5e4fa-d73d-48ec-9408-a84fda8a6099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messages">
+      <UniqueIdentifier>{ccb5d52c-2452-4837-be58-1af4d2c978f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sockets">
+      <UniqueIdentifier>{9f4e7ac9-2f9e-4fca-9a8f-f068d3ca319d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tasks">
+      <UniqueIdentifier>{fc14fc91-b335-4bf0-b119-26731ac6cc0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sockets\send">
+      <UniqueIdentifier>{002e5782-6aff-40fb-a4e6-a0a0e91db847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sockets\IPC">
+      <UniqueIdentifier>{c3ad113b-cd97-4e03-a7ea-c313da5a13a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messages\Sessions">
+      <UniqueIdentifier>{cb202cb4-0b47-466b-b29e-817c6deb6030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module">
+      <UniqueIdentifier>{80f84ed2-0b53-4e77-8593-590e09cccf9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module\Namespace">
+      <UniqueIdentifier>{409adc39-f3cf-4a0f-b0f3-13b6b6cb2b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sockets\Events">
+      <UniqueIdentifier>{3e6cf23e-e112-4e93-8ecf-1839967c67c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sockets">
+      <UniqueIdentifier>{ab3afe1c-d2d2-4494-a452-def41854fc37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sockets\Send">
+      <UniqueIdentifier>{0a041ffd-7f7e-4668-bae1-e715dba92d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sockets\IPC">
+      <UniqueIdentifier>{30938468-5299-4b88-b337-e422d21f85fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sockets\Events">
+      <UniqueIdentifier>{fa436e83-2361-44be-a9ba-ca8640c8a242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messages\Sessions">
+      <UniqueIdentifier>{eb660c6e-c588-49e6-a70c-e10c78f199d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tasks\Sessions">
+      <UniqueIdentifier>{fe88ef5b-3bff-40c0-bfc6-f88f0c392de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tasks\Sessions">
+      <UniqueIdentifier>{592e5498-d4d4-4f5d-b96f-5bc69afe9f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataApi">
+      <UniqueIdentifier>{3e71c651-31a6-46c1-8b6e-bdb3c9f97a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tools">
+      <UniqueIdentifier>{c6ba96d8-b491-43e9-adc0-877929b5757d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tools">
+      <UniqueIdentifier>{6c02732b-17ff-495e-9b4e-e7f4a1d1adde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sockets\Events\Interfaces">
+      <UniqueIdentifier>{56eda3bd-84ed-4c54-a18b-3b6f4a51c29c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sockets\Events\Sessions">
+      <UniqueIdentifier>{b05edff0-bddf-4be2-96f4-cdd3d76778f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sockets\Events\Sessions">
+      <UniqueIdentifier>{3b053319-9c27-4be3-a28c-d9e9bbde765d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsocket.h">
+      <Filter>Header Files\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tasks\nettaskconnector.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tasks\nettasklistener.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\modnet.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\defs\moddefnet.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\module.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsessionmetrics.h">
+      <Filter>Header Files\Tasks\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\namespaces\rjnet.h">
+      <Filter>Header Files\Module\Namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsocketevent.h">
+      <Filter>Header Files\Sockets\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tasks\nettaskaccepted.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\messages\netmessagesession.h">
+      <Filter>Header Files\Messages\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\messages\netmessagesessiondone.h">
+      <Filter>Header Files\Messages\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\messages\netmessagesock.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tasks\nettasksession.h">
+      <Filter>Header Files\Tasks\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\dataapi\netsessions.h">
+      <Filter>Header Files\DataApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsend.h">
+      <Filter>Header Files\Sockets\Send</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\ipc\netsocketipcaccept.h">
+      <Filter>Header Files\Sockets\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\ipc\netsocketipctransmit.h">
+      <Filter>Header Files\Sockets\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\ipc\netsocketipc.h">
+      <Filter>Header Files\Sockets\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsockettcp.h">
+      <Filter>Header Files\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tools\dnslookup.h">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsocketeventaccepted.h">
+      <Filter>Header Files\Sockets\Events\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsocketudp.h">
+      <Filter>Header Files\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tasks\nettasksessionlistener.h">
+      <Filter>Header Files\Tasks\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tasks\nettasksessionconnector.h">
+      <Filter>Header Files\Tasks\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsocketeventsessionpooled.h">
+      <Filter>Header Files\Sockets\Events\Sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\tasks\nettaskpool.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\net\netsocketeventpool.h">
+      <Filter>Header Files\Sockets\Events</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nettasksession.cpp">
+      <Filter>Source Files\Tasks\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="nettaskconnector.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="nettasklistener.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="net.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocket.cpp">
+      <Filter>Source Files\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketeventaccepted.cpp">
+      <Filter>Source Files\Sockets\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketevent.cpp">
+      <Filter>Source Files\Sockets\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="netmessagesock.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="netmessagesessiondone.cpp">
+      <Filter>Source Files\Messages\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="netmessagesession.cpp">
+      <Filter>Source Files\Messages\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="nettasksessionconnect.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="netsend.cpp">
+      <Filter>Source Files\Sockets\send</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketudp.cpp">
+      <Filter>Source Files\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketipc.cpp">
+      <Filter>Source Files\Sockets\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketipcaccept.cpp">
+      <Filter>Source Files\Sockets\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketipctransmit.cpp">
+      <Filter>Source Files\Sockets\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="netsockettcp.cpp">
+      <Filter>Source Files\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="dnslookup.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="nettasksessionlistener.cpp">
+      <Filter>Source Files\Tasks\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="nettaskaccepted.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketeventpoolsessions.cpp">
+      <Filter>Source Files\Sockets\Events\Sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="nettaskpool.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="netsocketeventpool.cpp">
+      <Filter>Source Files\Sockets\Events</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

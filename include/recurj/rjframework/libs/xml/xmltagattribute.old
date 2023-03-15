@@ -1,0 +1,39 @@
+/******************************************************************************
+*	XML attribute
+******************************************************************************/
+#pragma once
+#include <local/uwl/libs/base/memory/allocator.h>
+#include <local/uwl/libs/base/strings/byte/flex.h>
+#include <local/uwl/libs/xml/xmldefs.h>
+using namespace uwlBase;
+namespace uwlXml {
+	class CUWLXMLFileStore;
+	class UXML_API CUWLXMLTagAttribute: public CUWLListElemFreeDelete<CUWLXMLTagAttribute>
+	{
+	public:
+		static CUWLXMLTagAttribute *CreateAttribute(const CUWLStringByte &, const CUWLStringByte &, IUWLAllocator & = CUWLAllocatorDefault::GetAllocatorDefault());
+		virtual ~CUWLXMLTagAttribute();
+		void	GetReturn(CUWLStringByteFlex &);
+		bool	GetReturnNum(int64_t &);
+		bool	GetReturnSize(size_t &);
+		bool	GetReturnDouble(double &);
+		bool	GetReturnBool(bool &);
+		int64_t	GetReturnValidInt64(int64_t);
+		int32_t	GetReturnValidInt32(int32_t);
+		size_t	GetReturnValidSize(size_t);
+		double	GetReturnValidDouble(double);
+		bool	GetReturnValidBool(bool);
+		void	operator delete(void *);
+		inline  bool UpdateValue(const CUWLStringByte& s) { return m_clValue.Set(s); }
+		inline	const CUWLStringByte &GetName() const { return m_clName; };
+		inline	const CUWLStringByte &GetValue() const { return m_clValue; };
+		inline	bool IsThatName(const CUWLStringByte &clName) const { return clName == m_clName; }
+	protected:
+		void	*operator new(size_t);
+		CUWLXMLTagAttribute(const CUWLStringByte &, const CUWLStringByte&, IUWLAllocator &);
+		CUWLStringByteRuntime	m_clName;
+		CUWLStringByteExpanded	m_clValue;
+	protected:
+		static CUWLAllocatorRuntime m_clHeap;
+	};
+}

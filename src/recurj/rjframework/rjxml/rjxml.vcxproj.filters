@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Module">
+      <UniqueIdentifier>{eb304e51-a099-4351-a7da-4f8a715897e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module\Namespace">
+      <UniqueIdentifier>{c23c8f15-2064-4eae-b3e9-caaf60ed319b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Store">
+      <UniqueIdentifier>{d9217e9b-4c02-49fa-828c-8975248823c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Store">
+      <UniqueIdentifier>{e2fdee1e-3499-4fb6-89a9-f2b760c62003}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\modxml.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlcollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmldefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlelement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlparserbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlparserfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlparsermemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmltag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmltagattribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmltagcontent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmltools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\namespaces\rjxml.h">
+      <Filter>Header Files\Module\Namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlfilescript.h">
+      <Filter>Header Files\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\xml\xmlfilestore.h">
+      <Filter>Header Files\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\defs\moddefxml.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLParserBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLParserBase_Parse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLParserBase_Symbols.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLParserFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLParserMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLTagAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLTagContent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uXMLTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UXMLError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uxmlfilestore.cpp">
+      <Filter>Source Files\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="uxmlfilescript.cpp">
+      <Filter>Source Files\Store</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

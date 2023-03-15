@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Module">
+      <UniqueIdentifier>{416fb698-b3c5-44da-8720-a3865a5f8fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module\Namespace">
+      <UniqueIdentifier>{d9903d64-8e85-4209-a7f2-a8508a02a14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\months">
+      <UniqueIdentifier>{fb685b8d-8c91-416f-b3be-1aa08c70eb6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\months">
+      <UniqueIdentifier>{d87b919a-75d4-4255-8122-f3721890a46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\handles">
+      <UniqueIdentifier>{37a43c81-21e3-4a17-95d3-b142c75964ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\handles">
+      <UniqueIdentifier>{ae0e6ad9-f0f4-440e-9a1d-b609972c44cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\statementsql.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\cursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\defs\moddefdb.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\module.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\namespaces\rjdb.h">
+      <Filter>Header Files\Module\Namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\cursormonth.h">
+      <Filter>Header Files\months</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\scannermonth.h">
+      <Filter>Header Files\months</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\statementmonth.h">
+      <Filter>Header Files\months</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\dbmonthmarker.h">
+      <Filter>Header Files\months</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\handleconnection.h">
+      <Filter>Header Files\handles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\odbc\handlestatement.h">
+      <Filter>Header Files\handles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\dbinterfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\dbconnectioninfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\db\dbconnectioninfomap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\moddb.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBstatementBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBStatementCursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DbStatementSQL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbstatementmonth.cpp">
+      <Filter>Source Files\months</Filter>
+    </ClCompile>
+    <ClCompile Include="dbscannermonth.cpp">
+      <Filter>Source Files\months</Filter>
+    </ClCompile>
+    <ClCompile Include="dbmonthmarker.cpp">
+      <Filter>Source Files\months</Filter>
+    </ClCompile>
+    <ClCompile Include="dbscanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="handleconnection.cpp">
+      <Filter>Source Files\handles</Filter>
+    </ClCompile>
+    <ClCompile Include="handlestatement.cpp">
+      <Filter>Source Files\handles</Filter>
+    </ClCompile>
+    <ClCompile Include="dbcursormonth.cpp">
+      <Filter>Source Files\months</Filter>
+    </ClCompile>
+    <ClCompile Include="dbconnectioninfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbconnectioninfomap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,58 @@
+/******************************************************************************
+*	Mutex IPC
+*******************************************************************************
+*	Company: Serenare Ltd.
+*	Copyright (c) 2003-2022
+*	@author $: Kamardin$
+*	@version $:8.01.210101$
+*	@see $: $
+******************************************************************************/
+#pragma once
+#include <local/uwl/libs/base/strings/native.h>
+#include <local/uwl/libs/base/os/hhandle.h>
+namespace uwlBase {
+#ifdef _uOS_FAMILY_UNIX
+	class UWLBASE_API  HUWLIPCMutex : public CUWLLatch
+#endif
+#ifdef _uOS_WIN
+		class UWLBASE_API  HUWLIPCMutex : public  HUWLHandle
+#endif
+	{
+		friend class CUOSMutexLock;
+	public:
+		HUWLIPCMutex();
+		virtual ~HUWLIPCMutex();
+		bool	MutexCreate(bool bOwn = false);
+		bool	MutexOpen(bool bOwn = false);
+		bool	MutexEnter(int64_t);
+		bool	MutexLeave();
+		void	MutexRelease();
+		static  CUWLStringUnicode s_prefixMutex;
+	protected:
+		void DuplicatedCreate();
+		void mtxClose();
+		bool mtxRelease();
+		void setName(const CUWLStringByte&);
+	protected:
+		CUWLStringDefault m_clName;
+		size_t m_lHooked;
+#ifdef _uOS_FAMILY_UNIX
+		sem_t *m_pSemaphore;
+#endif
+		_CLASS_COPY_AND_ASSIGN_DELETE(HUWLIPCMutex)
+	};
+	class UWLBASE_API  CUOSIPCMutexHolder : public HUWLIPCMutex
+	{
+	public:
+		CUOSIPCMutexHolder();
+		virtual ~CUOSIPCMutexHolder();
+		bool Open(const CUWLStringByte&);
+	};
+	class UWLBASE_API  CUOSIPCMutexCustomer : public HUWLIPCMutex
+	{
+	public:
+		CUOSIPCMutexCustomer();
+		virtual ~CUOSIPCMutexCustomer();
+		bool Open(const CUWLStringByte&);
+	};
+}

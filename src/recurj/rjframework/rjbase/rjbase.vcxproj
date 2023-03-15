@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{218ED4FF-B394-405E-8215-EAB07B7D35AB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>rjbase</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>e:/development/rj/build/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>e:/development/rj/Solutions/rj/$(Platform)/base/$(Configuration)/$(ProjectName)/</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>e:/development/rj/build/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>e:/development/rj/Solutions/rj/$(Platform)/base/$(Configuration)/$(ProjectName)/</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <AdditionalOptions />
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PreprocessorDefinitions>_rjOS_WIN;rjbaselibrary;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>D:\development\cpp\include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <OutputFile>e:/development/rj/build/$(Platform)/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <Version>706.0403</Version>
+      <AdditionalLibraryDirectories>e:/development/rj/lib/$(Platform)/$(Configuration);e:/development/rj/tp/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(ProjectName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>e:/development/rj/lib/$(Platform)/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <AdditionalDependencies>wsock32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>false</OptimizeReferences>
+      <ModuleDefinitionFile>rjbase.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_rjOS_WIN;rjbaselibrary;NDEBUG;_USRDLL;(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <ProgramDataBaseFileName />
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>D:\development\cpp\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>e:/development/rj/build/$(Platform)/$(Configuration)/$(ProjectName).dll</OutputFile>
+      <Version>706.0403</Version>
+      <AdditionalLibraryDirectories>e:/development/rj/lib/$(Platform)/$(Configuration);e:/development/rj/tp/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile />
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName />
+      <MapExports>false</MapExports>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>e:/development/rj/lib/$(Platform)/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <AdditionalDependencies>wsock32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\cpp.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\datalength.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\errorcodes.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\functors.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\iname.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\application\application.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\application\memory.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\arrays\defs.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\arrays\integrals.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\arrays\pointers.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\index.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtree.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafint64.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafstringb.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafsize.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\rbtreeleafstringu.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treeint64.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treesize.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treestringbyte.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\btrees\treestringunicode.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\constant.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\flex.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\var.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\chains\varallocated.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\expressions.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\collection.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\comporator.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\lists\defs.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\maps\handbook.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\maps\stringbyte2size.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\maps\stringbyte2stringbyte.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\collections\storage.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\chain.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\pagination.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\result.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\sharedsize.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\shuffle.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datetime\dtimebinary.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filebase.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filecontent.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filescript.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\builder.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\defs.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\errors.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\parser.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\readerhandbook.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\formats\simple\readers.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\iterators\rangeloop.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\loggerapp.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\loggerthread.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\fileapp.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\filemodule.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\memory.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\writers\task.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocator.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\atomicnumber.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytewriter.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytestorage.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytepacker.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\bytereader.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\datatools.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\datatools\byteconvertor.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\file.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\fileencode.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filereader.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filereaderpossaver.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filereadertext.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filewalker.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filewriter.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\file\filewriterpossaver.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\iterators\stringinputiterator.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\logger\logger.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorany.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorcatalog.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorpolicy.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\allocatorfixed.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionbtree.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionjs.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionlua.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionmap.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionmessage.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionnet.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionsecurity.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionstorage.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionwww.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\memory\regions\allocatorregionxml.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\list.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\message.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\cmd.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\data.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\known.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\log.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\messages\queue.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hevent.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hheap.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hipcmemory.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hipcmutex.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hlibrary.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hlistener.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hprocess.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\hhandle.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\os\osdefs.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\def.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\leaf.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\static.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\storage\list.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\amount.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\error.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\string.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\flex.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\value.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\var.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\byte\allocated.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\dtime.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\encoding.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\dictionary.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\filename.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\value.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\string.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\flex.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\var.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\unicode\allocated.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\strings\native.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\task.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\tasklogger.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\taskqueuepool.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\taskqueuebasic.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\base\tasks\taskqueue.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\defs\moddefbase.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\modbase.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\module.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\namespaces\rjbase.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\oslib.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\ostarget.h" />
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\rjsecuritybox.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="allocator.cpp" />
+    <ClCompile Include="allocatorany.cpp" />
+    <ClCompile Include="allocatorcatalog.cpp" />
+    <ClCompile Include="btreeindex.cpp" />
+    <ClCompile Include="btreeint.cpp" />
+    <ClCompile Include="formatsimplebuilder.cpp" />
+    <ClCompile Include="formatsimpledefs.cpp" />
+    <ClCompile Include="formatsimpleparser.cpp" />
+    <ClCompile Include="formatsimplereaders.cpp" />
+    <ClCompile Include="allocatorfixed.cpp" />
+    <ClCompile Include="applicationmemory.cpp" />
+    <ClCompile Include="allocatorwithinfo.cpp" />
+    <ClCompile Include="appargs.cpp" />
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="btreesize.cpp" />
+    <ClCompile Include="btreestringbyte.cpp" />
+    <ClCompile Include="btreestringunicode.cpp" />
+    <ClCompile Include="chain.cpp" />
+    <ClCompile Include="bytereader.cpp" />
+    <ClCompile Include="bytewriter.cpp" />
+    <ClCompile Include="bytestorage.cpp" />
+    <ClCompile Include="bytepacker.cpp" />
+    <ClCompile Include="dictionary.cpp" />
+    <ClCompile Include="dtime.cpp" />
+    <ClCompile Include="filecontextent.cpp" />
+    <ClCompile Include="filescript.cpp" />
+    <ClCompile Include="hheap.cpp" />
+    <ClCompile Include="hlistener.cpp" />
+    <ClCompile Include="loggerapp.cpp" />
+    <ClCompile Include="loggerwriterfilemodule.cpp" />
+    <ClCompile Include="loggerwritertask.cpp" />
+    <ClCompile Include="maphandbook.cpp" />
+    <ClCompile Include="mapstringbyte2size.cpp" />
+    <ClCompile Include="mapstringbyte2stringbyte.cpp" />
+    <ClCompile Include="messagecmd.cpp" />
+    <ClCompile Include="messagelist.cpp" />
+    <ClCompile Include="messagequeue.cpp" />
+    <ClCompile Include="pagination.cpp" />
+    <ClCompile Include="rbtree.cpp" />
+    <ClCompile Include="rbtreecompare.cpp" />
+    <ClCompile Include="rbtreenode.cpp" />
+    <ClCompile Include="rbtree_drop.cpp" />
+    <ClCompile Include="rbtree_insert.cpp" />
+    <ClCompile Include="shuffle.cpp" />
+    <ClCompile Include="stringbyteamount.cpp" />
+    <ClCompile Include="stringbyteerror.cpp" />
+    <ClCompile Include="stringbytevarallocated.cpp" />
+    <ClCompile Include="stringunicodevarallocated.cpp" />
+    <ClCompile Include="task.cpp" />
+    <ClCompile Include="tasklogger.cpp" />
+    <ClCompile Include="taskqueue.cpp" />
+    <ClCompile Include="taskqueuepool.cpp" />
+    <ClCompile Include="taskqueuebasic.cpp" />
+    <ClCompile Include="hevent.cpp" />
+    <ClCompile Include="handle.cpp" />
+    <ClCompile Include="hipcmemory.cpp" />
+    <ClCompile Include="hipcmutex.cpp" />
+    <ClCompile Include="hlibrary.cpp" />
+    <ClCompile Include="hprocess.cpp" />
+    <ClCompile Include="result.cpp" />
+    <ClCompile Include="message.cpp" />
+    <ClCompile Include="messagelog.cpp" />
+    <ClCompile Include="datatools.cpp" />
+    <ClCompile Include="dtimebinary.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="byteconvertor.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stringbyte.cpp" />
+    <ClCompile Include="stringbytec.cpp" />
+    <ClCompile Include="stringbyteflex.cpp" />
+    <ClCompile Include="stringbytevalue.cpp" />
+    <ClCompile Include="stringbytevar.cpp" />
+    <ClCompile Include="stringbytevarassigned.cpp" />
+    <ClCompile Include="stringdtime.cpp" />
+    <ClCompile Include="stringnativetools.cpp" />
+    <ClCompile Include="stringunicode.cpp" />
+    <ClCompile Include="stringunicodevalue.cpp" />
+    <ClCompile Include="stringunicodec.cpp" />
+    <ClCompile Include="stringunicodeflex.cpp" />
+    <ClCompile Include="stringunicodevar.cpp" />
+    <ClCompile Include="stringunicodevarassigned.cpp" />
+    <ClCompile Include="encoding.cpp" />
+    <ClCompile Include="logger.cpp" />
+    <ClCompile Include="file.cpp" />
+    <ClCompile Include="filebase.cpp" />
+    <ClCompile Include="fileencode.cpp" />
+    <ClCompile Include="stringfilename.cpp" />
+    <ClCompile Include="filereader.cpp" />
+    <ClCompile Include="filereadertext.cpp" />
+    <ClCompile Include="filewalker.cpp" />
+    <ClCompile Include="filewriter.cpp" />
+    <ClCompile Include="loggerthread.cpp" />
+    <ClCompile Include="loggerwriterfileapp.cpp" />
+    <ClCompile Include="datastoragereaf.cpp" />
+    <ClCompile Include="datastorage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rjbase.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

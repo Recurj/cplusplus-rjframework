@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Messages">
+      <UniqueIdentifier>{7586b571-8b4b-4aeb-9fcc-11598cf1973c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messages">
+      <UniqueIdentifier>{ccb5d52c-2452-4837-be58-1af4d2c978f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\http">
+      <UniqueIdentifier>{c5b5f329-2070-4471-aa8c-1c43228faf73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\websockets">
+      <UniqueIdentifier>{53674d71-91f6-4098-aaa0-8456bc1f694e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\json">
+      <UniqueIdentifier>{d2078a6a-fa62-408d-83c6-f66c21d69e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\http">
+      <UniqueIdentifier>{a636dc49-02a6-430a-96cb-7f4ec80f7e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\json">
+      <UniqueIdentifier>{e9715f55-8d9d-47bc-9f5e-2356026b7f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\websockets">
+      <UniqueIdentifier>{68562d64-1667-4fd2-bb1c-4e54fff99139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\http\replies">
+      <UniqueIdentifier>{23162d23-ad68-423c-95ae-5ade05dd5c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\http\reply">
+      <UniqueIdentifier>{43ae0489-26e0-4a2b-80b5-af8adb494df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module">
+      <UniqueIdentifier>{80f84ed2-0b53-4e77-8593-590e09cccf9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module\Namespace">
+      <UniqueIdentifier>{409adc39-f3cf-4a0f-b0f3-13b6b6cb2b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\http\message">
+      <UniqueIdentifier>{13d08bc4-2bf2-4790-8a5f-c643d2945ed1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\module.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\modwww.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\namespaces\rjwww.h">
+      <Filter>Header Files\Module\Namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\modules\defs\moddefwww.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\url.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\json\builder.h">
+      <Filter>Header Files\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\json\parser.h">
+      <Filter>Header Files\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\defs.h">
+      <Filter>Header Files\websockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\messages\reply.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\messages\replyfile.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\messages\replyjsonerror.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\server.h">
+      <Filter>Header Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\plugins.h">
+      <Filter>Header Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\formdata.h">
+      <Filter>Header Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\client.h">
+      <Filter>Header Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\channels.h">
+      <Filter>Header Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\reply.h">
+      <Filter>Header Files\http\replies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\replyfile.h">
+      <Filter>Header Files\http\replies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\replyjson.h">
+      <Filter>Header Files\http\replies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\replywebsocket.h">
+      <Filter>Header Files\http\replies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\http\defs.h">
+      <Filter>Header Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\connection.h">
+      <Filter>Header Files\websockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\datain.h">
+      <Filter>Header Files\websockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\recurj\rjframework\libs\www\websocket\dataout.h">
+      <Filter>Header Files\websockets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="httpclient.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="httpformdata.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="httpserver.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="httpreply.cpp">
+      <Filter>Source Files\http\reply</Filter>
+    </ClCompile>
+    <ClCompile Include="httpreplyfile.cpp">
+      <Filter>Source Files\http\reply</Filter>
+    </ClCompile>
+    <ClCompile Include="httpreplyjson.cpp">
+      <Filter>Source Files\http\reply</Filter>
+    </ClCompile>
+    <ClCompile Include="httpreplywebsocket.cpp">
+      <Filter>Source Files\http\reply</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket.cpp">
+      <Filter>Source Files\websockets</Filter>
+    </ClCompile>
+    <ClCompile Include="netjsonparser.cpp">
+      <Filter>Source Files\json</Filter>
+    </ClCompile>
+    <ClCompile Include="netjsonvar.cpp">
+      <Filter>Source Files\json</Filter>
+    </ClCompile>
+    <ClCompile Include="netmessagehttpreply.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="netmessagehttpreplyfile.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="netmessagehttpreplyjsonerror.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="url.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="httpmessage.cpp">
+      <Filter>Source Files\http\message</Filter>
+    </ClCompile>
+    <ClCompile Include="httpmessagelang.cpp">
+      <Filter>Source Files\http\message</Filter>
+    </ClCompile>
+    <ClCompile Include="websocketin.cpp">
+      <Filter>Source Files\websockets</Filter>
+    </ClCompile>
+    <ClCompile Include="websocketout.cpp">
+      <Filter>Source Files\websockets</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
